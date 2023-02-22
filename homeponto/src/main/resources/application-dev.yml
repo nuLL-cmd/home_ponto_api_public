@@ -1,0 +1,38 @@
+#Configuração de datasource
+spring:
+  datasource:
+    username: web_service
+    url: jdbc:postgresql://localhost:5432/db_home_ponto
+    password: post#2022
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+    show-sql: 'true'
+
+#Configuração de log
+logging:
+  level:
+    br:
+      com:
+        fujioka: DEBUG
+        zaxxer:
+         hikari:
+            HikariConfig: DEBUG
+    org:
+      hibernate:
+        engine:
+          jdbc: OFF
+        SQL: OFF
+        jpa: OFF
+        event: OFF
+        type:
+          descriptor:
+            sql:
+              BasicBinder: OFF
+      springframework:
+        web: 
+          HttpLogging: OFF
+          nodeValue: OFF  
+          client:
+            RestTemplate: OFF

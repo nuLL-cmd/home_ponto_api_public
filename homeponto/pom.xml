@@ -8,15 +8,26 @@
 		<version>2.7.8</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>br.com.automatodev</groupId>
-	<artifactId>homeponto</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>homeponto_api</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>homeponto</name>
-	<description>Demo project for Spring Boot</description>
+	<name>homeponto_api</name>
+	<description>API para controle de horas trabalhadas em home office</description>
+
+	<developers>
+		<developer>
+			<name>null</name>
+			<email>programadormoderador@hotmail.com</email>
+			<url>https://github.com/nuLL-cmd</url>
+		</developer>
+	</developers>
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -76,5 +87,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+        <repository>
+          <id>github</id>
+          <name>Github nuLL-cmd Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/nuLL-cmd/banner_spring_test_publish</url>
+        </repository>
+     </distributionManagement>
 
 </project>
