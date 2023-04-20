@@ -10,12 +10,18 @@ spring:
         format_sql: 'true'
     show-sql: 'true'
 
+# API GERA LOG
+api:
+  log:
+    geraLog: http://192.168.200.70:9065/gera-log-api/log
+    geraLogId: http://192.168.200.70:9065/gera-log-api/log/gerar-id
+
 #Configuração de log
 logging:
   level:
     br:
       com:
-        fujioka: DEBUG
+        automatodev: DEBUG
         zaxxer:
          hikari:
             HikariConfig: DEBUG
